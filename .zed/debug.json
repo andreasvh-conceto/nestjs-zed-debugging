@@ -18,7 +18,7 @@
     "restart": true
   },
   {
-    "label": "Debug E2E Test (Watch)",
+    "label": "Debug E2E Test",
     "adapter": "JavaScript",
     "request": "launch",
     "type": "pwa-node",
