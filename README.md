@@ -5,17 +5,17 @@ This project is created for testing out the zed debugger. It is more about learn
 ## Project setup
 
 ```bash
-pnpm i
+npm i
 ```
 
 ## Run tests
 
 ```bash
 # unit tests
-$ pnpm run test
+$ npm run test
 
 # e2e tests
-$ pnpm run test:e2e
+$ npm run test:e2e
 
 ```
 
