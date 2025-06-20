@@ -4,7 +4,7 @@
 // see: https://zed.dev/docs/debugger
 [
   {
-    "label": "Debug Unit Test2",
+    "label": "Debug Unit Test",
     "adapter": "JavaScript",
     "request": "launch",
     "type": "pwa-node",
