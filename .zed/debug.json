@@ -3,39 +3,47 @@
 // For more documentation on how to configure debug tasks,
 // see: https://zed.dev/docs/debugger
 [
+  // {
+  //   "label": "Debug Unit Test",
+  //   "adapter": "JavaScript",
+  //   "request": "launch",
+  //   "type": "pwa-node",
+  //   "runtimeExecutable": "node",
+  //   "program": "${ZED_WORKTREE_ROOT}/node_modules/.bin/jest", // Path to Jest executable
+  //   "args": ["--runInBand", "--watch", "--testTimeout=3600000", "--verbose"],
+  //   "cwd": "${ZED_WORKTREE_ROOT}",
+  //   "console": "integratedTerminal",
+  //   "stopOnEntry": true,
+  //   "sourceMaps": true,
+  //   "restart": true
+  // },
+  // {
+  //   "label": "Debug E2E Test",
+  //   "adapter": "JavaScript",
+  //   "request": "launch",
+  //   "type": "pwa-node",
+  //   "runtimeExecutable": "node",
+  //   "program": "${ZED_WORKTREE_ROOT}/node_modules/.bin/jest",
+  //   "args": [
+  //     "--runInBand",
+  //     "--watch",
+  //     "--testTimeout=3600000",
+  //     "--verbose",
+  //     "--config",
+  //     "${ZED_WORKTREE_ROOT}/test/jest-e2e.json"
+  //   ],
+  //   "cwd": "${ZED_WORKTREE_ROOT}",
+  //   "console": "integratedTerminal",
+  //   "stopOnEntry": true,
+  //   "sourceMaps": true,
+  //   "restart": true
+  // },
   {
-    "label": "Debug Unit Test",
+    "label": "JavaScript debug terminal",
     "adapter": "JavaScript",
     "request": "launch",
     "type": "pwa-node",
-    "runtimeExecutable": "node",
-    "program": "${ZED_WORKTREE_ROOT}/node_modules/.bin/jest", // Path to Jest executable
-    "args": ["--runInBand", "--watch", "--testTimeout=3600000", "--verbose"],
-    "cwd": "${ZED_WORKTREE_ROOT}",
-    "console": "integratedTerminal",
-    "stopOnEntry": true,
-    "sourceMaps": true,
-    "restart": true
-  },
-  {
-    "label": "Debug E2E Test",
-    "adapter": "JavaScript",
-    "request": "launch",
-    "type": "pwa-node",
-    "runtimeExecutable": "node",
-    "program": "${ZED_WORKTREE_ROOT}/node_modules/.bin/jest",
-    "args": [
-      "--runInBand",
-      "--watch",
-      "--testTimeout=3600000",
-      "--verbose",
-      "--config",
-      "${ZED_WORKTREE_ROOT}/test/jest-e2e.json"
-    ],
-    "cwd": "${ZED_WORKTREE_ROOT}",
-    "console": "integratedTerminal",
-    "stopOnEntry": true,
-    "sourceMaps": true,
-    "restart": true
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "console": "integratedTerminal"
   }
 ]
