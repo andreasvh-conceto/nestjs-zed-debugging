@@ -39,7 +39,7 @@
   //   "restart": true
   // },
   {
-    "label": "JavaScript debug terminal",
+    "label": "My JavaScript debug terminal",
     "adapter": "JavaScript",
     "request": "launch",
     "type": "pwa-node",
