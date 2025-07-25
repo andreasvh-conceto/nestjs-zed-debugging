@@ -45,5 +45,17 @@
     "type": "pwa-node",
     "cwd": "$ZED_WORKTREE_ROOT",
     "console": "integratedTerminal"
+  },
+  {
+    "label": "My JavaScript2 debug terminal",
+    "adapter": "JavaScript",
+    "request": "launch",
+    "type": "pwa-node",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "console": "integratedTerminal",
+    "sourceMaps": true,
+    // "sourceMapRenames": false,
+    "pauseForSourceMap": true,
+    "skipFiles": ["<node_internals>/**", "${ZED_WORKTREE_ROOT}/node_modules/**"]
   }
 ]
