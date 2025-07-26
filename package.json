@@ -17,6 +17,13 @@
     "test:watch": "jest --debug --watch --runInBand --testTimeout=3600000 --detectOpenHandles",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand --detectOpenHandles",
+    "db:stop": "docker compose down -v",
+    "db:start": "docker compose up -d",
+    "db:restart": "npm run db:stop && npm run db:start",
+    "pretest:int:watch:kill": "npm run db:restart",
+    "posttest:int:watch:kill": "npm run db:stop",
+    "test:int:watch:kill": "jest --watch --debug --config ./test/jest-e2e.json --runInBand --testTimeout=3600000 --detectOpenHandles",
+    "test:int:watch:success": "docker compose down -v && docker compose up -d && jest --watch --debug --config ./test/jest-e2e.json --runInBand --testTimeout=3600000 --detectOpenHandles",
     "test:e2e": "jest --config ./test/jest-e2e.json --detectOpenHandles",
     "test:e2e:watch": "jest --watch --debug --config ./test/jest-e2e.json --runInBand --testTimeout=3600000 --detectOpenHandles"
   },
